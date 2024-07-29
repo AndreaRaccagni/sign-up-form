@@ -40,7 +40,8 @@ body,
 
 #container > section:last-child {
   flex: 2;
-  padding: 1rem;
+  font-size: large;
+  font-weight: bold;
 }
 
 #logo {
@@ -70,11 +71,97 @@ body,
 
 .photo-credit {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   padding: 0.5rem;
 }
 
 a {
   color: white;
   text-decoration: underline;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+.form-header,
+.form-btn {
+  flex: 1;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding-right: 10rem;
+}
+
+.form-inputs {
+  background-color: white;
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-btn {
+  font-size: normal;
+}
+
+button {
+  color: white;
+  background-color: #596d48;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-btn p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.form-btn > p > span {
+  color: #596d48;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 5rem;
+  font-size: small;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.inputs label {
+  display: block;
+}
+
+input {
+  border: solid 1px #e5e7eb;
+  border-radius: 3px;
+  padding: 0.1rem 0.3rem;
+  width: 250px;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: solid 1px blue;
+  outline: none;
+}
+
+input:invalid {
+  border: solid 1px red;
 }
